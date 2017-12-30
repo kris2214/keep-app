@@ -1,0 +1,32 @@
+.note-container {
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+}
+.note-expansion-container {
+    width: 40vw;
+}
+.new-note-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.new-note-container input {
+    width: stretch; 
+}
+.btn-done {
+    margin: 1em;
+}
+.notes-card-container {
+    display: flex;
+    margin-bottom: 2em;
+    justify-content: center;
+}
+.notes-card-container div{
+    justify-content: center;
+    margin-bottom: 2em;
+}
+.notes-card {
+    margin: 1em;
+    height: auto;
+}

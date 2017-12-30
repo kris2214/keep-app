@@ -1,0 +1,24 @@
+<div class="note-container">
+<mat-expansion-panel class="note-expansion-container">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Take a Note
+      </mat-panel-title>
+      
+  </mat-expansion-panel-header>
+  <div class="new-note-container">
+      <input [(ngModel)]="note.title" matInput placeholder="Title"><br/>
+      <textarea [(ngModel)]="note.description" matInput placeholder="Description"></textarea>
+      <button mat-raised-button color="primary" (click)="addNote()" class="btn-done">Done</button>
+  </div>
+</mat-expansion-panel>
+</div>
+
+<div class="container-fluid notes-card-container">
+  <div class="row">
+  <mat-card *ngFor="let note of notesArr" class="col-lg-2 col-md-4 col-sm-4 col-xs-12 notes-card">
+    <h4>{{note.title}}</h4>
+    <p>{{note.description}}</p>
+  </mat-card>
+</div>
+</div>
